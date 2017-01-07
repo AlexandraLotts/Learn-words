@@ -1,0 +1,121 @@
+@font-face {
+    font-family: AvenirRoman;
+    src: url("../assets/fonts/avenir/Avenir-Roman.otf") format('opentype');
+}
+@font-face {
+    font-family: AvenirRoman;
+    font-style: italic;
+    src: url("../assets/fonts/avenir/Avenir-Medium-Oblique.ttf") format('truetype');
+}
+@font-face {
+    font-family: AvenirRoman;
+    font-weight: bold;
+    src: url("../assets/fonts/avenir/Avenir-Heavy.otf") format('opentype');
+}
+@font-face {
+    font-family: AvenirRomanMedium;
+    font-weight: bold;
+    src: url("../assets/fonts/avenir/Avenir-Medium.otf") format('opentype');
+}
+body{
+	font-family: 'AvenirRomanMedium', 'Arial';
+}
+
+p{
+  font-size: 1rem;
+}
+@media (max-width: 575px) {
+  p {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 576px) {
+  p {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+.navigation {
+	height: auto;
+	background-color: #25475B;
+	color: white;
+}
+.navigation p {
+margin-top: 1rem;
+}
+.blue-bckg{
+	background-color: #E7F5FE;
+}
+
+
+
+
+
+
+/*
+bar-color, dark-image-overlay-color,
+
+general-dark-background-color
+
+#25475B
+
+Navigation bar background color, many labels, some
+
+image overlays
+
+store-green-color #62E5CD In the store screen
+
+dark-blue-background-color #1B3747
+
+Store header texts, action items in the "Word List", text
+
+labels on "Home screen" for languages being learned and
+
+available tools
+
+general-light-background-color #E7F5FE
+
+Home modal background, background "Word list",
+
+background list "Enrich words", background "Select
+
+language"
+
+info-icon-color #4a81d2 Informative icons on "Word List" and "Enrich words" list
+
+sky-blue-color #61A8DD
+
+Action icons on "learn mode" screen1, Action icons on
+
+"Results"
+
+light-blue-color #88C1EA Icon button color on "Results" screen
+
+success-green-color #449d44
+
+Icon overlay color for icon on the left of "learn mode"
+
+screen1
+
+choose-button-text-color #5A95DB
+
+In review suggestions screen, color of "Choose another"
+
+label
