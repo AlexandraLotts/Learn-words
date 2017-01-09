@@ -1,26 +1,28 @@
 @font-face {
     font-family: AvenirRoman;
-    src: url("../assets/fonts/avenir/Avenir-Roman.otf") format('opentype');
+    src: url("../fonts/avenir/Avenir-Roman.otf") format('opentype');
 }
 @font-face {
     font-family: AvenirRoman;
     font-style: italic;
-    src: url("../assets/fonts/avenir/Avenir-Medium-Oblique.ttf") format('truetype');
+    src: url("../fonts/avenir/Avenir-Medium-Oblique.ttf") format('truetype');
 }
 @font-face {
     font-family: AvenirRoman;
     font-weight: bold;
-    src: url("../assets/fonts/avenir/Avenir-Heavy.otf") format('opentype');
+    src: url("../fonts/avenir/Avenir-Heavy.otf") format('opentype');
 }
 @font-face {
     font-family: AvenirRomanMedium;
     font-weight: bold;
-    src: url("../assets/fonts/avenir/Avenir-Medium.otf") format('opentype');
-}
-body{
-	font-family: 'AvenirRomanMedium', 'Arial';
+    src: url("../fonts/avenir/Avenir-Medium.otf") format('opentype');
 }
 
+body {
+    font-family: 'AvenirRoman', 'Arial';
+
+}
+/*
 p{
   font-size: 1rem;
 }
@@ -51,7 +53,7 @@ p{
   p {
     font-size: 1.2rem;
   }
-}
+}*/
 .navigation {
 	height: auto;
 	background-color: #25475B;
@@ -60,9 +62,14 @@ p{
 .navigation p {
 margin-top: 1rem;
 }
+
 .blue-bckg{
 	background-color: #E7F5FE;
 }
+.dark-blue{
+	color: #25475B;
+}
+
 
 
 
