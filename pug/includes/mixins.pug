@@ -1,0 +1,6 @@
+mixin flags(src, title, src2)
+	.media.flags
+		img.d-flex.align-self-center.mr-3(src=src)
+		.media-body
+			p.mt-3 #{title}
+		img(class!=attributes.class src=src2)

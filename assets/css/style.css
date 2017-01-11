@@ -89,13 +89,12 @@ background-color: #25475B;
     width: 50px;
 }
 
-.flags .media-body {
+.media.flags {
     border-bottom: 1px solid #d4d4d4;
 }
 
 .flags img.checked-icon {
     width: 15px;
-    border-bottom: 1px solid #ccc;
     padding: 1.45rem 0;
 }
 
