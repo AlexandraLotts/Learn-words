@@ -2,127 +2,105 @@
     font-family: AvenirRoman;
     src: url("../fonts/avenir/Avenir-Roman.otf") format('opentype');
 }
+
 @font-face {
     font-family: AvenirRoman;
     font-style: italic;
     src: url("../fonts/avenir/Avenir-Medium-Oblique.ttf") format('truetype');
 }
+
 @font-face {
     font-family: AvenirRoman;
     font-weight: bold;
     src: url("../fonts/avenir/Avenir-Heavy.otf") format('opentype');
 }
+
 @font-face {
     font-family: AvenirRomanMedium;
-    font-weight: bold;
     src: url("../fonts/avenir/Avenir-Medium.otf") format('opentype');
 }
 
 body {
     font-family: 'AvenirRoman', 'Arial';
-
-}
-/*
-p{
-  font-size: 1rem;
-}
-@media (max-width: 575px) {
-  p {
-    font-size: .8rem;
-  }
-}
-
-@media (min-width: 576px) {
-  p {
-    font-size: .8rem;
-  }
-}
-
-@media (min-width: 768px) {
-  p {
-    font-size: .9rem;
-  }
-}
-
-@media (min-width: 992px) {
-  p {
     font-size: 1.1rem;
-  }
 }
-@media (min-width: 1200px) {
-  p {
-    font-size: 1.2rem;
-  }
-}*/
+
+@media (max-width: 576px) {
+    body {
+        font-size: .9rem;
+    }
+}
+
 .navigation {
-	height: auto;
-	background-color: #25475B;
-	color: white;
+    height: auto;
+    color: #fff;
+}
+.navigation>.container{
+background-color: #25475B;
 }
 .navigation p {
-margin-top: 1rem;
+    margin-top: 1rem;
 }
-
-.blue-bckg{
-	background-color: #E7F5FE;
-}
-.dark-blue{
-	color: #25475B;
+.navigation a {
+    color: #fff;
+    text-decoration: none;
 }
 
 
+/*Colors*/
+
+.light-blue {
+    color: #E7F5FE;
+}
+
+.light-blue-bckg {
+    background-color: #E7F5FE;
+}
+
+.dark-blue {
+    color: #25475B;
+}
+
+.dark-blue-bckg {
+    background-color: #1B3747;
+}
+
+.green-store {
+    color: #62E5CD;
+}
+
+.info-icon-color {
+    color: #4a81d2;
+}
+
+.sky-blue-color {
+    color: #61A8DD;
+}
 
 
+/*Select language page*/
 
+.body-select p.dark-blue {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
 
+.flags img {
+    width: 50px;
+}
 
-/*
-bar-color, dark-image-overlay-color,
+.flags .media-body {
+    border-bottom: 1px solid #d4d4d4;
+}
 
-general-dark-background-color
+.flags img.checked-icon {
+    width: 15px;
+    border-bottom: 1px solid #ccc;
+    padding: 1.45rem 0;
+}
 
-#25475B
-
-Navigation bar background color, many labels, some
-
-image overlays
-
-store-green-color #62E5CD In the store screen
-
-dark-blue-background-color #1B3747
-
-Store header texts, action items in the "Word List", text
-
-labels on "Home screen" for languages being learned and
-
-available tools
-
-general-light-background-color #E7F5FE
-
-Home modal background, background "Word list",
-
-background list "Enrich words", background "Select
-
-language"
-
-info-icon-color #4a81d2 Informative icons on "Word List" and "Enrich words" list
-
-sky-blue-color #61A8DD
-
-Action icons on "learn mode" screen1, Action icons on
-
-"Results"
-
-light-blue-color #88C1EA Icon button color on "Results" screen
-
-success-green-color #449d44
-
-Icon overlay color for icon on the left of "learn mode"
-
-screen1
-
-choose-button-text-color #5A95DB
-
-In review suggestions screen, color of "Choose another"
-
-label
+@media (max-width: 576px) {
+    .flags img.checked-icon {
+        padding: 1.3rem 0;
+    }
+}
