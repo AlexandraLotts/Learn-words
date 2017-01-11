@@ -6,15 +6,8 @@ block content
 	.navigation.light-blue-bckg
 		.container
 				.row
-					.col
-						p 
-							a(href='', title='') Cancel
-					.col-6
-						p.text-center 
-							a(href='', title='')
-								strong Select target language
-					.col
-						p       
+					+navigation('#', 'Cancel', '#', 'Select target language')
+					  
 	.body-select.light-blue-bckg
 		.container
 			.row

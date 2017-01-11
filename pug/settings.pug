@@ -6,15 +6,7 @@ block content
   .navigation
     .container
         .row
-          .col
-            p 
-              a(href='', title='') Done
-          .col-6
-            p.text-center 
-              a(href='', title='')
-                strong Settings
-          .col
-            p      
+          +navigation('#', 'Done', '#', 'Settings', '#','','../assets/img/general-icons/question-white.svg')(class="nav-icon") 
             
   .container
     .row

@@ -45,6 +45,14 @@ background-color: #25475B;
     color: #fff;
     text-decoration: none;
 }
+.nav-icon {
+	width: 26px;
+}
+@media (max-width: 576px) {
+    .nav-icon {
+		width: 21px;
+}
+}
 
 
 /*Colors*/
@@ -76,7 +84,6 @@ background-color: #25475B;
 .sky-blue-color {
     color: #61A8DD;
 }
-
 
 /*Select language page*/
 

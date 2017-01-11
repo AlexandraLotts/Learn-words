@@ -1,3 +1,16 @@
+mixin navigation(href1, name1, href2, name2, href3, name3, src)
+	.col
+		p 
+			a(class!=attributes.class href=href1)= name1
+	.col-6
+		p.text-center.font-weight-bold 
+			a(class!=attributes.class href=href2)= name2
+	.col
+		p.text-right
+			a(class!=attributes.class href=href3)= name3
+				img(class!=attributes.class src=src)
+
+
 mixin flags(src, title, src2)
 	.media.flags
 		img.d-flex.align-self-center.mr-3(src=src)
