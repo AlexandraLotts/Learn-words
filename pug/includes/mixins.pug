@@ -5,8 +5,8 @@ mixin navigation(href1, name1, href2, name2, href3, name3, src)
 	.col-6
 		p.text-center.font-weight-bold 
 			a(class!=attributes.class href=href2)= name2
-	.col
-		p.text-right
+	.col.text-right
+		p
 			a(class!=attributes.class href=href3)= name3
 				img(class!=attributes.class src=src)
 
@@ -17,3 +17,29 @@ mixin flags(src, title, src2)
 		.media-body
 			p.mt-3 #{title}
 		img(class!=attributes.class src=src2)
+
+mixin information(title, src)
+	.row.bb.mt-3
+		.col-8
+			.row.no-gutters
+				.col-3.col-md-1
+					img.settings-big-icon(src=src)
+				.col.text-left
+					p #{title}
+		.col.text-right
+			p
+				a(href='#')
+					img.arrow-right(src='../assets/img/general-icons/arrow-right.svg')
+	
+mixin settings(title)
+	.row.bb.mt-3
+		.col
+			p #{title}
+		.col.text-right
+			p 
+				a(href='#')
+					img.arrow-right(src='../assets/img/general-icons/arrow-right.svg')
+
+					
+
+

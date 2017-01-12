@@ -25,6 +25,14 @@ body {
     font-size: 1.1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 @media (max-width: 576px) {
     body {
         font-size: .9rem;
@@ -35,23 +43,28 @@ body {
     height: auto;
     color: #fff;
 }
-.navigation>.container{
-background-color: #25475B;
+
+.navigation>.container {
+    background-color: #25475B;
 }
+
 .navigation p {
     margin-top: 1rem;
 }
+
 .navigation a {
     color: #fff;
     text-decoration: none;
 }
+
 .nav-icon {
-	width: 26px;
+    width: 26px;
 }
+
 @media (max-width: 576px) {
     .nav-icon {
-		width: 21px;
-}
+        width: 21px;
+    }
 }
 
 
@@ -85,6 +98,7 @@ background-color: #25475B;
     color: #61A8DD;
 }
 
+
 /*Select language page*/
 
 .body-select p.dark-blue {
@@ -109,4 +123,135 @@ background-color: #25475B;
     .flags img.checked-icon {
         padding: 1.3rem 0;
     }
+}
+
+
+/*Settings page*/
+
+.bb {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.bt {
+    border-top: 1px solid #d4d4d4;
+}
+
+.settings-block h1 {
+    color: #666666;
+    background-color: #efeff4;
+    padding: 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.settings-block p {
+    color: #25475B;
+    font-family: 'AvenirRomanMedium';
+    font-size: 1rem;
+}
+
+.settings-block .col.text-right p {
+    color: #666666;
+    font-weight: normal;
+}
+
+.settings-block .col.text-right a p,
+.settings-block .col-2.text-right a p,
+.links a p {
+    color: #007aff;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+@media (max-width: 576px) {
+	.settings-block p {
+    font-size: .9rem;
+}
+    .settings-block .col.text-right {
+        padding-right: 15px;
+    }
+}
+
+.arrow-right {
+    width: 15px;
+    margin-left: 10px;
+}
+
+.settings-big-icon {
+    width: 30px;
+}
+.question-icon{
+	width: 25px;
+}
+.animals{
+	width: 40px;
+}
+.progress-bar {
+    background-color: #25475b;
+}
+
+
+/* The switch*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 0 1px #666666;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 36px;
+    width: 36px;
+    left: 0px;
+    top: -1px;
+    background-color: white;
+    border: 1px solid #d4d4d4;
+    box-shadow: 1px 1px 1px #d4d4d4;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #439c43;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #439c43;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }

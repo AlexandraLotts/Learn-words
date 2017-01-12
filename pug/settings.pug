@@ -7,144 +7,144 @@ block content
     .container
         .row
           +navigation('#', 'Done', '#', 'Settings', '#','','../assets/img/general-icons/question-white.svg')(class="nav-icon") 
-            
-  .container
-    .row
-      .col
-        p Language
-        .row
-          .col
-            p Target language
-          .col.text-right
-            p Spanish
-          .w-100
-          .col
-            p Instruction language
-          .col.text-right
-            p English
-    .row
-      .col
-        p Speech
-        .row
-          .col
-            p Speed of speech
-        .row
-          .col
-            p Тут будет бар
-          .col.text-right
-            a(href='')
-              p Reset
-        .row
-          .col
-            p Use Mexican Spanish instead of Spanish Spanish
-          .col.text-right
-            p On/Off
-        .row
-          .col
-            p Тут будет импут
-          .col.text-right
-            a(href='')
-              p Listen
-        .row
-          .col.text-right
-            a(href='')
-              p Problem with hearing the audio?
-    .row
-      .col
-        p Audio
-        .row
-          .col
-            p Background music
-          .col.text-right
-            p On/Off
-    .row
-      .col
-        p Linguineo account 
-        .row
-          .col
-            p 
-            | If you create a Linguineo account, we will store your word list on our servers so you do not lose your words when removing the app and so you can synchronize between devices.
-        .row
-          .col.text-center
-            a(href='')
-              p Login
-            a(href='')
-              p Ceate account
-            a(href='')
-              p Forgot password?
-    .row
-      .col
-        p Available aids
-        .row
-          .col
-            p Aids help you with importing words
-          .col.text-right
-            p значок вопроса
-        .row
-          .col-6
-            p иконки
-        .row
-          .col
-            a(href='')
-              p Get some for free
-          .col.text-right
-            a(href='')
-              p Buy in store
-    .row
-      .col
-        p Information
-        .row
-          .col
-            p Give feedback
-          .col.text-right
-            p значок
-          .w-100
-          .col
-            p Rate this app
-          .col.text-right
-            p значок
-          .w-100
-          .col
-            p Share this app
-          .col.text-right
-            p значок
-          .w-100
-          .col
-            p Like us on Facebook
-          .col.text-right
-            p значок
-          .w-100
-          .col
-            p View our other apps
-          .col.text-right
-            p значок
-    .row
-      .col
-        p Advanced settings
-        .row
-          .col
-            p Learning settings
-          .col.text-right
-            p значок
-          .w-100
-          .col
-            p Manage cached data
-          .col.text-right
-            p значок
-          .w-100
-          .col
-            p Offline image recognition settings
-          .col.text-right
-            p значок
-    .row
-      .col
-        p Warning and confirmations
-        .row
-          .col
-            p Warning when using aid
-          .col.text-right
-            p значок + on/off
-            
+  .settings-block       
+    .container
+      .row.no-gutters
+        .col
+          h1 Language
+          .row.bb
+            .col
+              p Target language
+            .col.text-right
+              p Spanish
+                a(href='#')
+                  img.arrow-right(src='../assets/img/general-icons/arrow-right.svg')
+          .row.bb
+            .col.mt-3
+              p Instruction language
+            .col.text-right.mt-3
+              p English
+                a(href='#')
+                  img.arrow-right(src='../assets/img/general-icons/arrow-right.svg')
+      .row.no-gutters
+        .col
+          h1 Speech
+          .row
+            .col
+              p Speed of speech
+          .row
+            .col
+              .row.no-gutters
+                .col
+                  img.animals(src='../assets/img/turtle@2x.png')
+                .col
+                  hr
+                .col.text-right
+                  img.animals(src='../assets/img/rabit@2x.png')
+            .col.text-right
+              a(href='')
+                p Reset
+          .row
+            .col
+              p Use Mexican Spanish instead of Spanish Spanish
+            .col.text-right
+              label.switch
+                input(type='checkbox')
+                .slider.round
+          .row.mt-1
+            .col-9.col-md-10.col-lg-11
+              form
+                .form-group
+                  input.form-control(type='text', placeholder='hamster')
+            .col.text-right
+              a(href='')
+                p Listen
+          .row.bb
+            .col.text-right
+              a(href='')
+                p Problem with hearing the audio?
+      .row.no-gutters
+        .col
+          h1 Audio
+          .row.bb
+            .col.mt-3
+              p Background music
+            .col.text-right.mt-3
+              label.switch
+                input(type='checkbox')
+                .slider.round     
+      .row.no-gutters
+        .col
+          h1 Linguineo account 
+          .row
+            .col.mt-3
+              p If you create a Linguineo account, we will store your word list on our servers so you do not lose your words when removing the app and so you can synchronize between devices.
+          .row
+            .col.text-center.links
+              a(href='')
+                p Login
+              a(href='')
+                p Create account
+              a(href='')
+                p Forgot password?
+      .row.no-gutters
+        .col
+          h1.bt Available aids
+          .row
+            .col
+              p Aids help you with importing words
+            .col.text-right
+              p
+                a(href='#')
+                  img.question-icon(src='../assets/img/general-icons/question-black.svg')
+          .row
+            .col-8
+              p.ml-3 
+                span.pr-1 
+                  strong 0
+                img.mr-3.nav-icon(src='../assets/img/microphone@2x.png')
+                span.pr-1 
+                  strong 0
+                img.mr-3.nav-icon(src='../assets/img/document@2X.png')
+                span.pr-1 
+                  strong 0
+                img.mr-3.nav-icon(src='../assets/img/lamp@2x.png')
+          .row
+            .col.links.mt-2
+              a(href='')
+                p Get some for free
+            .col.text-right.mt-2
+              a(href='')
+                p Buy in store
+      .row.no-gutters
+        .col
+          h1.bt Information
+          +information('Give feedback', '../assets/img/general-icons/envelope.svg')
+          +information('Rate this app', '../assets/img/general-icons/star.svg')
+          +information('Share this app', '../assets/img/general-icons/heart.svg')
+          +information('Like us on Facebook', '../assets/img/general-icons/facebook.svg')
+          +information('View our other apps', '../assets/img/general-icons/up-arrow.svg')
+      .row.no-gutters
+        .col
+          h1 Advanced settings
+          +settings('Learning settings')
+          +settings('Manage cached data')
+          +settings('Offline image recognition settings')
+      .row.no-gutters
+        .col
+          h1 Warning and confirmations
+          .row.bb.mt-3
+            .col
+              p Warning when using aid
+            .col.text-right
+              .row.no-gutters
+                .col.mr-2
+                  label.switch
+                    input(type='checkbox', checked='')
+                    .slider.round
+                .col-1.mt-1
+                  a(href='#')
+                    img.question-icon(src='../assets/img/general-icons/question-black.svg')
 
 
         
