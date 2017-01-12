@@ -40,6 +40,14 @@ mixin settings(title)
 				a(href='#')
 					img.arrow-right(src='../assets/img/general-icons/arrow-right.svg')
 
-					
-
+mixin tree-icon(title1, src1, title2, src2, title3, src3)
+	span.pr-1 
+		strong #{title1}
+	img.mr-3.nav-icon(src=src1)
+	span.pr-1 
+		strong #{title2}
+	img.mr-3.nav-icon(src=src2)
+	span.pr-1 
+		strong #{title3}
+	img.mr-3.nav-icon(src=src3)
 

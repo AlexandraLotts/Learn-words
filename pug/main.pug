@@ -1,0 +1,59 @@
+extends templates
+block title
+	title Learn words
+
+block content
+	.navigation
+		.container
+			.row
+				.col
+					p 
+						a(href='#')
+							img.nav-icon(src='../assets/img/general-icons/thumbs-up.svg')
+				.col-6
+					p.text-center.font-weight-bold.text-uppercase Learn words
+
+				.col.text-right
+					p.two-icon
+						a(href='#').mr-3
+							img.nav-icon(src='../assets/img/general-icons/settings.svg')
+						a(href='#')
+							img.nav-icon(src='../assets/img/general-icons/question-white.svg')
+		
+		.container.learn-words-block
+			.row.justify-content-center
+				.col.blue-bubble
+					p Learning:
+					img(src='../assets/img/flags/england@2x.png')
+					img(src='../assets/img/home/triangle_arrow@2x.png')
+					img(src='../assets/img/flags/spain@2x.png')
+				.col.blue-bubble
+					p Available aid:
+					p.dark-blue
+						+tree-icon('0', '../assets/img/microphone@2x.png', '0', '../assets/img/document@2X.png', '0', '../assets/img/lamp@2x.png') 
+				.col
+					img.w-50(src='../assets/img/aito/aito5.png')
+			.container
+				.row.justify-content-center
+					.col-4.card-item
+						p Add words
+					.col-4.card-item
+						p Word list
+				.row.justify-content-center
+					.col-4.card-item
+						p Learn
+					.col-4.card-item
+						p Exercise
+				.row.justify-content-center
+					.col-4.card-item
+						p Play
+					.col-4.card-item
+						p Results
+				.row.justify-content-center
+					.col-4.card-item
+						p Store
+					.col-4
+						p 
+							img(src='../assets/img/home/round_facebook_icon@2x.png')
+							img(src='../assets/img/home/audio_button@2x.png')
+

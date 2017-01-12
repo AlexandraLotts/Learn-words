@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: AvenirRoman;
+    font-family: AvenirRomanHeavy;
     font-weight: bold;
     src: url("../fonts/avenir/Avenir-Heavy.otf") format('opentype');
 }
@@ -167,9 +167,9 @@ a:hover {
 }
 
 @media (max-width: 576px) {
-	.settings-block p {
-    font-size: .9rem;
-}
+    .settings-block p {
+        font-size: .9rem;
+    }
     .settings-block .col.text-right {
         padding-right: 15px;
     }
@@ -183,12 +183,15 @@ a:hover {
 .settings-big-icon {
     width: 30px;
 }
-.question-icon{
-	width: 25px;
+
+.question-icon {
+    width: 25px;
 }
-.animals{
-	width: 40px;
+
+.animals {
+    width: 40px;
 }
+
 .progress-bar {
     background-color: #25475b;
 }
@@ -254,4 +257,39 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+
+/*Learn words*/
+
+@media (max-width: 374px) {
+    .two-icon a:first-child {
+        float: left;
+        margin-right: 5px !important;
+    }
+}
+.learn-words-block {
+	background: url(../img/backgrounds/pathway_with_pines@2x.jpg);
+	background-repeat: no-repeat;
+	background-color: #656565;
+	background-size: cover;
+	height: 800px;
+	max-width: 100%;
+}
+.card-item{
+	background: url(../img/buttons/transparant_button@2x.png);
+	border-radius: 8px;
+
+}
+.card-item p{
+	color: #25475B;
+	font-family: 'AvenirRomanHeavy';
+	text-transform: uppercase;
+	text-align: center;
+}
+.blue-bubble {
+	background-color: rgba(175, 215, 239, 0.5);
+	border-radius: 8px;
+	margin:10px;
+
 }
