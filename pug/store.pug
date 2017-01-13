@@ -1,0 +1,56 @@
+extends templates
+block title
+	title Store
+
+block content
+	.navigation
+		.container
+			.row
+				.col
+					p 
+						a(href='#')
+							img.nav-icon(src='../assets/img//general-icons/arrow-left.svg')
+				.col-6
+					p.text-center.font-weight-bold Store
+
+				.col.text-right
+					p.two-icon
+						a(href='#').mr-3
+							img.nav-icon(src='../assets/img/general-icons/round-right-arrow.svg')
+						a(href='#')
+							img.nav-icon(src='../assets/img/general-icons/question-white.svg')
+	.container.store-block
+
+		.row.no-gutters
+			.col
+				h1 Permanent upgrades
+				.row.no-gutters
+					.col.mt-3
+						p Permanent upgrades are permanent upgrades linked to your Apple iTunes account.
+				.row.mt-3
+					+store('Word games','Permanently unlocks crosswords and searches.','0,99 €')
+					+store('Better learning','Configure your learning sessions with more types of exercises and with more control on how the items are repeated. Also unlocks learn mode permanently.','0,99 €')
+		.row
+			.col
+				h1 Aids
+				.row
+					.col-10.mt-3
+						p Aids make it easy to import words or enable certain exercises.
+					.col-2.text-right.mt-3
+						p
+							a(href='#')
+								img.question-icon(src='../assets/img/general-icons/question-white.svg')
+				.row
+					.col
+						p Available aids
+							span.ml-4
+							+tree-icon('0', '../assets/img/microphone-white@2x.png', '0', '../assets/img/document-white@2X.png', '0', '../assets/img/lamp-white@2x.png')
+				.row.mt-3.mb-4
+					+store('Started pack','10 speech recognitions, 10 text image recognitions and 200 suggestions.','0,99 €')
+					+store('Speech recognition pack','100 speech recognitions.','2,99 €')
+					+store('Image recognition pack','100 text image recognitions.','2,99 €')
+					+store('Suggestion pack','1000 suggestions.','2,99 €')
+					+store('Value pack','100 speech recognitions, 100 image recognitions and 1000 suggestions.','4,99 €')
+
+
+					

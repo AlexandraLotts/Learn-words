@@ -1,0 +1,58 @@
+extends templates
+block title
+	title Say the words
+
+block content
+	.navigation
+		.container
+			.row
+				.col
+					p 
+						a(href='#')
+							img.nav-icon(src='../assets/img/general-icons/arrow-left.svg')
+				.col-6
+					p.text-center.font-weight-bold Say the words
+
+				.col.text-right
+					p
+						a(href='#')
+							img.nav-icon(src='../assets/img/general-icons/home.svg')
+		
+	.container.say-words-block
+			.container
+				.row.justify-content-center
+					.col-8
+						.row
+							.col-8
+								p Records again in Spanish
+								p Or press "recognize" to put the text you said in the text field below and use it
+							.col-4
+								p
+									a(href='#')
+										img(src='../assets/img/record_speech/record_button@2x.png')
+					.col-8
+						.row
+							.col-12
+								p Recorded fragment
+							.col
+								span 52kB
+								img.nav-icon(src='../assets/img/home/triangle_arrow@2x.png')
+								span Listen
+								span Recognize
+			.container
+				.row
+					.col
+						p hola 
+						p hombre
+						p mujer
+			.container
+				.row
+					.col
+						img.nav-icon(src='../assets/img/record_speech/edit_manually.png')
+						span.text-uppercase Edit manually
+			.container
+				.row.justify-content-center
+					.col.text-center
+							p 
+								a(href='#') Start exercise
+								

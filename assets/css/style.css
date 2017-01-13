@@ -271,9 +271,9 @@ input:checked + .slider:before {
 .learn-words-block {
 	background: url(../img/backgrounds/pathway_with_pines@2x.jpg);
 	background-repeat: no-repeat;
-	background-color: #656565;
+	background-color: #FFF;
 	background-size: cover;
-	height: 800px;
+	height: auto;
 	max-width: 100%;
 }
 .card-item{
@@ -293,3 +293,80 @@ input:checked + .slider:before {
 	margin:10px;
 
 }
+
+/*Setup an exercise page*/
+.setup-exs-block {
+	background: url(../img/backgrounds/exercise_settings_bkg@2x~ipad.png);
+	background-repeat: no-repeat;
+	background-color: #FFF;
+	background-size: cover;
+	height: auto;
+	max-width: 100%;
+}
+.setup-exs-block p{
+	color: #FFF;
+	font-family: 'AvenirRomanHeavy';
+}
+
+/*Say the words page*/
+.say-words-block{
+	background-color: #a5ceec;
+	height: 800px;
+}
+/*Store*/
+
+.store-block{
+	background-color: #1a3647;
+	color: #FFF;
+}
+.store-block h1{
+	background-color: #5bd3c0;
+	color: #1a3647;
+	text-transform: uppercase;
+	padding: 15px;
+    font-size: 1rem;
+    margin-left: -15px;
+    margin-right: -15px;
+    font-weight: bold;
+}
+.store-block p {
+    font-size: 1rem;
+}
+.store-block p.title{
+	color: #5bd3c0;
+	font-weight: bold;
+	margin-bottom: .7rem
+}
+.store-block p.title.price{
+	color: #FFF;
+}
+.store-block p.subtitle{
+	font-size: .9rem;
+	margin-top: -.5rem
+}
+.store-block p.store-button {
+	background: url(../img/store/store_button@2x6.png);
+	background-repeat: no-repeat;
+	float: right;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 1.9;
+}
+.store-block p.store-button a {
+	color: white;
+	text-decoration: none;
+}
+@media (min-width: 1024px) {
+    .store-img{
+	margin-right: 15px;
+}
+}
+/*Word-list*/
+.searchbar{
+	background-color: #25475B;
+	padding: 10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+

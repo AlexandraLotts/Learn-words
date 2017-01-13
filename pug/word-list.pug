@@ -1,0 +1,56 @@
+extends templates
+block title
+	title My word list 
+
+block content
+	.navigation
+		.container
+			.row
+				.col-4
+					p 
+						a(href='#')
+							img.nav-icon(src='../assets/img//general-icons/arrow-left.svg')
+				.col-4
+					p.text-center.font-weight-bold My word list 
+
+				.col-4.text-right
+					p
+						a(href='#').mr-3
+							img.nav-icon(src='../assets/img/general-icons/filter.svg')
+						a(href='#').mr-3
+							img.nav-icon(src='../assets/img/general-icons/plus.svg')
+						a(href='#').mr-3
+							img.nav-icon(src='../assets/img/general-icons/question-white.svg')
+						a(href='#')
+							img.nav-icon(src='../assets/img/general-icons/menu.svg')
+
+	.word-list
+		.container.light-blue-bckg
+			.row
+				.col-12.searchbar
+					input.form-control(type='text', placeholder='search')
+			.container
+				.row.bb.mt-3
+					.col-8
+						.row
+							.col-2
+								img.settings-big-icon(src='../assets/img/general-icons/play-button.svg')
+							.col-4.text-left
+								p elefante
+								p elephant
+					.col-4.text-right
+						img.settings-big-icon(src='../assets/img/general-icons/play-button.svg')
+
+							('leon','lion')
+							('hipopotamo','hippopotamus')
+							('rinoceronte','rinoceros')
+							('cuerno','antler')
+							('trompa','trunk(of elephant)')
+							('colmillo','tusk')
+							('tigre','tiger')
+							('alce','lion')
+							('leon','moose')
+					p To rehearsal mode
+
+						
+
