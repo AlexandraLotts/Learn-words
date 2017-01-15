@@ -43,13 +43,13 @@ mixin settings(title)
 mixin tree-icon(title1, src1, title2, src2, title3, src3)
 	span.pr-1 
 		strong #{title1}
-	img.mr-3.nav-icon(src=src1)
+	img(class!=attributes.class src=src1)
 	span.pr-1 
 		strong #{title2}
-	img.mr-3.nav-icon(src=src2)
+	img(class!=attributes.class src=src2)
 	span.pr-1 
 		strong #{title3}
-	img.mr-3.nav-icon(src=src3)
+	img(class!=attributes.class src=src3)
 
 mixin store(title, subtitle, price, href)
 	.col-sm-12.col-md-6
@@ -63,3 +63,28 @@ mixin store(title, subtitle, price, href)
 				p.title.price #{price}
 				p.store-button
 					a(href=href)= BUY
+
+
+mixin enrich-w-columns(title1, title2, href1, src1, href2, src2, href3, src3, href4, src4, href5, src5, href6, src6)
+		.col-4.col-md-4.words
+			img.checked-icon(src='../assets/img/checkbox_checked_blue.png')
+			span #{title1}
+		.col-3.col-md-4.col-sm-4.text-center.words
+			p #{title2}
+		.col-5.col-md-4.text-right.words
+			.row.justify-content-end
+				.col-7.col-md-4.col-lg-3.mtm-10.icons-group
+					a(href=href1)
+						img.wdth-19(src=src1) 
+					a(href=href2)
+						img.wdth-19(src=src2) 
+					br
+					a(href=href3)
+						img.wdth-19(src=src3)
+					a(href=href4)
+						img.wdth-19(src=src4)
+				.col-5.col-md-4.col-lg-3.icons-group
+					a(href=href5)
+						img.close-icon(src=src5)
+					a(href=href6)
+						img.arrow-right(src=src6)

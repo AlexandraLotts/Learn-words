@@ -20,40 +20,64 @@ block content
 						a(href='#')
 							img.nav-icon(src='../assets/img/general-icons/question-white.svg')
 		
-		.container.learn-words-block
-			.row.justify-content-center
-				.col.blue-bubble
-					p Learning:
-					img(src='../assets/img/flags/england@2x.png')
-					img(src='../assets/img/home/triangle_arrow@2x.png')
-					img(src='../assets/img/flags/spain@2x.png')
-				.col.blue-bubble
-					p Available aid:
-					p.dark-blue
-						+tree-icon('0', '../assets/img/microphone@2x.png', '0', '../assets/img/document@2X.png', '0', '../assets/img/lamp@2x.png') 
-				.col
-					img.w-50(src='../assets/img/aito/aito5.png')
+	.container.learn-words-block
 			.container
 				.row.justify-content-center
-					.col-4.card-item
-						p Add words
-					.col-4.card-item
-						p Word list
+					.col-12.col-lg-8.mt-3.pr30
+						.row.justify-content-center
+							.col-12.col-md-4.blue-bubble
+								p Learning:
+								p
+									img.wdth-30(src='../assets/img/flags/england@2x.png')
+									img.wdth-20.ml-4(src='../assets/img/home/triangle_arrow@2x.png')
+									img.wdth-30.ml-4(src='../assets/img/flags/spain@2x.png')
+							.col-12.col-md-4.blue-bubble
+								p Available aid:
+								p.dark-blue
+									+tree-icon('0', '../assets/img/microphone@2x.png', '0', '../assets/img/document@2X.png', '0', '../assets/img/lamp@2x.png')(class="wdth-20") 
+							
+							//Where should I place this img on small and xs devices?
+							
+							.hidden-sm-down.col-md-3
+								img.w-100(src='../assets/img/aito/aito5.png')
+			.container
 				.row.justify-content-center
-					.col-4.card-item
-						p Learn
-					.col-4.card-item
-						p Exercise
-				.row.justify-content-center
-					.col-4.card-item
-						p Play
-					.col-4.card-item
-						p Results
-				.row.justify-content-center
-					.col-4.card-item
-						p Store
-					.col-4
-						p 
-							img(src='../assets/img/home/round_facebook_icon@2x.png')
-							img(src='../assets/img/home/audio_button@2x.png')
+					.col-12.col-lg-8.mt-3.mb-5
+						.row.justify-content-center
+							.col-12.col-md-6.card-item
+								a(href='#')
+									img.wdth-20(src='../assets/img/home/plus@2x.png')
+									span Add words
+							.col-12.col-md-6.card-item
+								a(href='#') 
+									img.wdth-20(src='../assets/img/home/read@2x.png')
+									span Word list
+						.row.justify-content-center
+							.col-12.col-md-6.card-item
+								a(href='#') 
+									img.wdth-20(src='../assets/img/home/learn_icon@2x.png')
+									span Learn
+							.col-12.col-md-6.card-item
+								a(href='#')
+									img.wdth-20(src='../assets/img/home/pencil@2x.png')
+									span Exercise
+						.row.justify-content-center
+							.col-12.col-md-6.card-item
+								a(href='#') 
+									img.wdth-20(src='../assets/img/home/puzzle@2x.png')
+									span Play
+							.col-12.col-md-6.card-item
+								a(href='#') 
+									img.wdth-20(src='../assets/img/home/statistics@2x.png')
+									span Results
+						.row.justify-content-center
+							.col-12.col-md-6.card-item
+								a(href='#') 
+									img.wdth-20(src='../assets/img/home/basket@2x.png')
+									span Store
+							.col-12.col-md-6.text-right.mt-3
+								a(href='#')
+									img.wdth-80.mr-3(src='../assets/img/home/round_facebook_icon@2x.png')
+								a(href='#')
+									img.wdth-80.mr-3(src='../assets/img/home/audio_button@2x.png')
 

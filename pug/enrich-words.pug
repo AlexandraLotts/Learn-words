@@ -1,0 +1,71 @@
+extends templates
+block title
+	title Enrich words
+
+block content
+	.navigation
+		.container
+			.row
+				.col
+					p 
+						a(href='#')
+							img.nav-icon(src='../assets/img//general-icons/arrow-left.svg')
+				.col-6
+					p.text-center.font-weight-bold Enrich words
+
+				.col.text-right
+					p.two-icon
+						a(href='#').mr-3
+							img.nav-icon(src='../assets/img/general-icons/home.svg')
+						a(href='#')
+							img.nav-icon(src='../assets/img/general-icons/question-white.svg')
+	.container.enrich-words-block
+		.row
+			.col-12.text-center.mt-3
+				p.title 105 words will be imported
+				p.subtitle Below you can enrich some or all of these words with translations, images, a label and sentences.
+		.row
+			.col-12.text-center.links
+				a(href='#') Select all
+				a(href='#') Deselect all
+		.row
+			.col-12.light-blue-bckg.mt-2
+				.row.bb
+					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
+				.row.bb
+					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
+				.row.bb
+					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
+				.row.bb
+					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
+				.row.bb
+					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
+				.row.bb
+					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
+				.row.bb
+					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
+				.row.bb
+					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
+				.row.bb
+					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
+		.row.justify-content-center.mt-4
+			.col-12.col-md-9
+				.row.text-center
+					.col.orange-buttons.mr-2
+						p
+							a(href='#') Add translations
+					.col.orange-buttons.mr-2
+						p
+							a(href='#') Add images
+					.col.orange-buttons
+						p
+							a(href='#') Add sentences
+		.row.justify-content-center.mt-3.pb-3
+			.col-12.col-md-6
+				.row.text-center
+					.col.green-buttons.mr-2
+						p
+							a(href='#') Add label
+					.col.green-buttons
+						p
+							a(href='#') More action
