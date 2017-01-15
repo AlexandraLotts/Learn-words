@@ -623,3 +623,8 @@ input:checked + .slider:before {
     	padding: 3px;
     }
 }
+.confirm {
+	 background-color: #25475B;
+	 padding-top: 10px;
+	 color: white;
+}
