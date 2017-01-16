@@ -1,0 +1,91 @@
+extends templates
+block title
+	title Results
+
+block content
+	.navigation
+		.container
+			.row
+				.col
+					p 
+						a(href='#')
+							img.nav-icon(src='../assets/img/general-icons/arrow-left.svg')
+				.col-6
+					p.text-center.font-weight-bold Results
+
+				.col.text-right
+					p
+						a(href='#')
+							img.nav-icon(src='../assets/img/general-icons/question-white.svg')
+	.container.results-block
+		.row.justify-content-center
+			.col-12.col-md-8.col-lg-6.text-center
+				p.title Reports
+				p.subtitle Last reports
+				.row.justify-content-center
+					.col-2.text-left
+						img.wdth-30.mb-2(src='../assets/img/home/learn_icon@2x.png')
+					.col-8.text-center
+						span Dec 24, 2016, 3:02 PM, 100% correct
+						br
+						span Learning session: 3 new words acquired.
+					.col-2.text-right
+						img.wdth-30.mb-2(src='../assets/img/general-icons/list.svg')
+				.row.justify-content-center
+					.col-2.text-left
+						img.wdth-30.mb-2(src='../assets/img/home/pencil@2x.png')
+					.col-8.text-center
+						span Dec 24, 2016, 3:01 PM, score: 0/2
+						br
+						span Exercise on Spanish - English.
+					.col-2.text-right
+						img.wdth-30.mb-2(src='../assets/img/general-icons/list.svg')
+				.row.justify-content-center
+					.col-12.text-center
+						p
+							a(href='#') View all reports
+		.row.justify-content-center
+			.col-12.col-md-8.col-lg-6.text-center
+				.row.justify-content-center
+					.col-8.text-center
+						p.title Word statics
+					.col-4.text-right
+						img.wdth-30.mb-2(src='../assets/img/general-icons/garbage.svg')
+				.row.justify-content-center
+					.col
+						p New words: 97/105
+					.col.text-right
+						.row.no-gutters
+							.col.mr-2
+								label.switch
+									input(type='checkbox')
+									.slider.round.slider-trasparent
+							.col-1.mt-1
+								a(href='#')
+									img.question-icon(src='../assets/img/general-icons/question-white.svg')
+				.row.justify-content-center
+					.col
+						p Problematic words 3/105
+					.col.text-right
+						.row.no-gutters
+							.col.mr-2
+								label.switch
+									input(type='checkbox')
+									.slider.round.slider-trasparent
+							.col-1.mt-1
+								a(href='#')
+									img.question-icon(src='../assets/img/general-icons/question-white.svg')
+				.row.justify-content-center
+					.col
+						p Acquired words 5/105
+					.col.text-right
+						.row.no-gutters
+							.col.mr-2
+								label.switch
+									input(type='checkbox')
+									.slider.round.slider-trasparent
+							.col-1.mt-1
+								a(href='#')
+									img.question-icon(src='../assets/img/general-icons/question-white.svg')
+						
+				
