@@ -201,8 +201,15 @@
       width: 40px;
   }
   
+  .wdth-45 {
+      width: 45px;
+  }
+  
   .wdth-80 {
       width: 60px;
+  }
+  .wdth150{
+  	width: 150px;
   }
   
   .progress-bar {
@@ -342,12 +349,15 @@
       color: white;
   }
   
-  .learn-ten-words p.title {
+  .learn-ten-words p.title,
+  .learn-ten-words p.title-2 {
       font-size: 1.8rem;
       font-weight: bold;
   }
   
-  .learn-ten-words p.subtitle {
+  .learn-ten-words p.subtitle,
+  .learn-ten-words p.subtitle-2
+   {
       font-size: 1.5rem;
   }
   
@@ -395,8 +405,47 @@
       margin-top: 5px;
   }
   
+  .row.aito-2.mtop {
+      margin-top: 12%;
+  }
+  
+  .learn-ten-words .aito-2-rules img {
+      width: 70%;
+      margin-top: -9rem;
+  }
+  
+  .learn-ten-words .words-list span {
+      font-size: 1rem;
+      line-height: 2.5;
+  }
+  
+  .learn-ten-words .words-list p {
+      font-size: .9rem;
+      font-style: italic;
+      margin-top: .8rem;
+      padding-left: 2rem;
+  }
+  
+  .learn-ten-words .play-only img {
+      margin-top: 25%;
+  }
+  
+  @media (min-width: 1440px) {
+      .learn-ten-words .aito-2-rules img {
+          width: 61%;
+          margin-top: -8rem;
+      }
+      .row.aito-2.mtop {
+      margin-top: 9%;
+  }
+  }
+  
   @media (min-width: 577px) and (max-width: 768px) {
       .learn-ten-words .aito-rules img {
+          width: 70%;
+          margin-top: -4rem;
+      }
+      .learn-ten-words .aito-2-rules img {
           width: 70%;
           margin-top: -4rem;
       }
@@ -407,9 +456,15 @@
           font-size: 1.5rem;
           margin-left: 2.5rem;
       }
+      .learn-ten-words p.title-2 {
+          font-size: 1.5rem;
+      }
       .learn-ten-words p.subtitle {
           font-size: 1.1rem;
           margin-left: 2.5rem;
+      }
+      .learn-ten-words p.subtitle-2 {
+          font-size: 1.1rem;
       }
       .learn-ten-words .answers p {
           font-size: 1.8rem;
@@ -423,6 +478,10 @@
           font-size: 1.1rem;
       }
       .learn-ten-words .aito-rules img {
+          width: 100%;
+          margin-top: -1rem;
+      }
+      .learn-ten-words .aito-2-rules img {
           width: 100%;
           margin-top: -1rem;
       }
@@ -471,6 +530,10 @@
   
   @media (max-width: 375px) {
       .learn-ten-words .aito-rules img {
+          width: 100%;
+          margin-top: 1rem;
+      }
+      .learn-ten-words .aito-2-rules img {
           width: 100%;
           margin-top: 1rem;
       }
