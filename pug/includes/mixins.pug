@@ -51,20 +51,6 @@ mixin tree-icon(title1, src1, title2, src2, title3, src3)
 		strong #{title3}
 	img(class!=attributes.class src=src3)
 
-mixin store(title, subtitle, price, href)
-	.col-sm-12.col-md-6
-		.row.no-gutters
-			.col-2.col-md-2.col-lg-1.store-img
-				img.animals(src='../assets/img/store/store_icon@2x.png')
-			.col-8.col-md-7.col-lg-8
-				p.title #{title}
-				p.subtitle #{subtitle}
-			.col-2.col-md-3.col-lg-2.text-right
-				p.title.price #{price}
-				p.store-button
-					a(href=href)= BUY
-
-
 mixin enrich-w-columns(title1, title2, href1, src1, href2, src2, href3, src3, href4, src4, href5, src5, href6, src6)
 		.col-4.col-md-4.words
 			img.checked-icon(src='../assets/img/checkbox_checked_blue.png')
@@ -88,3 +74,42 @@ mixin enrich-w-columns(title1, title2, href1, src1, href2, src2, href3, src3, hr
 						img.close-icon(src=src5)
 					a(href=href6)
 						img.arrow-right(src=src6)
+
+
+mixin store(title, subtitle, price, href)
+		.col-sm-12.col-md-6
+			.row.no-gutters
+				.col-2.col-md-2.col-lg-1.store-img
+					img.animals(src='../assets/img/store/store_icon@2x.png')
+				.col-8.col-md-7.col-lg-8
+					p.store-title #{title}
+					p.store-subtitle #{subtitle}
+				.col-2.col-md-3.col-lg-2.text-right
+					p.store-title.price #{price}
+					p.store-button-st
+						a(href=href)
+							span BUY
+mixin word-list(word,translation)
+	.row.bb
+			.col-6.mt-3
+				.row
+					.col-3.col-md-2.mt-3
+						img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
+					.col.text-left
+						p #{word}
+						p #{translation}
+		
+			.col-6.text-right.word-list-imgs.mt-3
+				.row
+					.col
+						img.wdth-25(src='../assets/img/general-icons/star.svg')
+						img.wdth-25(src='../assets/img/general-icons/edit.svg')
+						img.wdth-25(src='../assets/img/general-icons/cancel.svg')
+				.row
+					.col
+						img.wdth-19(src='../assets/img/word_edit/blue_male@2x.png')
+						img.wdth-19(src='../assets/img/word_edit/blue_neuter@2x.png')
+						img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
+						img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
+
+

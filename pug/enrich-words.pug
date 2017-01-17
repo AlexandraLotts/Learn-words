@@ -3,7 +3,7 @@ block title
 	title Enrich words
 
 block content
-	.navigation
+	.navigation.fixed-top
 		.container
 			.row
 				.col
@@ -49,28 +49,29 @@ block content
 				.row.bb
 					+enrich-w-columns('elefante', 'elephant', '#', '../assets/img/word_edit/blue_neuter@2x.png', '#', '../assets/img/word_edit/tag_icon@2x.png', '#', '../assets/img/word_edit/blue_male@2x.png', '#', '../assets/img/word_edit/image_icon@2x.png', '#', '../assets/img/buttons/remove_button@2x.png', '#', '../assets/img/general-icons/arrow-right.svg')
 		.row.justify-content-center.mt-4
-			.col-12.col-md-9
+			.col-12.col-lg-8
 				.row.text-center
-					.col.orange-buttons.mr-2
+					.col
 						p
-							a(href='#') Add translations
-					.col.orange-buttons.mr-2
+							a.btn.btn-orange(href='#') Add translations
+					.col
 						p
-							a(href='#') Add images
-					.col.orange-buttons
+							a.btn.btn-orange(href='#') Add images
+					.col
 						p
-							a(href='#') Add sentences
+							a.btn.btn-orange(href='#') Add sentences
+
 		.row.justify-content-center.mt-3.pb-3
-			.col-12.col-md-6
-				.row.text-center
-					.col.green-buttons.mr-2
+			.col-12.col-md-6.col-lg-4
+				.row
+					.col
 						p
-							a(href='#') Add label
-					.col.green-buttons
+							a.btn.btn-green(href='#') Add label
+					.col
 						p
-							a(href='#') More action
+							a.btn.btn-green(href='#') More action
 		
-		.row.text-center.confirm
+		.row.text-center.confirm.fixed-bottom
 			.col
 				p Confirm import
 

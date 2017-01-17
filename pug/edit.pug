@@ -1,6 +1,6 @@
 extends templates
 block title
-	title Edit
+	title Edit word
 
 block content
 	.navigation
@@ -43,19 +43,19 @@ block content
 					span.input-group-addon 
 						img.question-icon(src='../assets/img/word_edit/tag_icon@2x.png')
 					input.form-control.edit-w(type='text', placeholder='Big animals')
-			.col-4.col-md-2.text-center
+			.col-4.col-md-2.add-icon
 				a(href='#')
 					img.wdth-30(src='../assets/img/general-icons/add.svg')
 		.row
 			.col-12
 				p.title Image for word
 		.row.justify-content-center
-			.col-8
+			.col-12.col-md-8
 				.row.justify-content-between
-					.col-4.text-right
-						img.wdth150(src='../assets/img/elephant-2.png')
+					.col-6.col-md-4.text-right
+						img.wdth150.img-edit(src='../assets/img/elephant-2.png')
 						a(href='#')
-							img.question-icon(src='../assets/img/word_edit/close_red_icon@2x.png')
+							img.question-icon.close-edit(src='../assets/img/word_edit/close_red_icon@2x.png')
 					.col-6.text-left
 						.row
 							.col-12
@@ -64,8 +64,8 @@ block content
 									span.input-group-addon 
 										img.question-icon(src='../assets/img/word_edit/earth_icon@2x.png')
 									input.form-control.edit-b(type='text', placeholder='URL')
-							.col-12.mt-3
-								a.btn-orange-play(href='#')
+							.col-12.mt-4
+								a.btn-orange-play.btn-orange(href='#')
 									span Suggest
 		.row
 			.col-12
@@ -74,7 +74,7 @@ block content
 					.col-8.col-md-10
 						form(role='form')
 							.form-group
-								textarea.form-control.edit-w(rows='5') Как добавить сюда картинку флага?
+								textarea.form-control.edit-w(rows='5') Has visto a un elefante volar alguna vez?
 					.col-4.col-md-2
 						p
 							a.btn-orange-play(href='#')
@@ -88,7 +88,7 @@ block content
 					.col-8.col-md-10
 						form(role='form')
 							.form-group
-								textarea.form-control.edit-w(rows='5') Как добавить сюда картинку флага?
+								textarea.form-control.edit-w(rows='5') Have you ever seen an elephant fly?
 									
 		.row
 			.col.pb-4

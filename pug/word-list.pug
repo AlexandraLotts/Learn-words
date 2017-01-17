@@ -3,7 +3,7 @@ block title
 	title My word list 
 
 block content
-	.navigation
+	.navigation.fixed-top
 		.container
 			.row
 				.col-4
@@ -24,163 +24,23 @@ block content
 						a(href='#')
 							img.nav-icon(src='../assets/img/general-icons/menu.svg')
 
-	.word-list
-		.container.light-blue-bckg
-			.row
-				.col-12.searchbar
-					input.form-control(type='text', placeholder='search')
+	
+	.container.word-list.light-blue-bckg
+		.row
+			.col-12.searchbar
+				input.form-control(type='text', placeholder='search')
+		+word-list('elefante','elephant')
+		+word-list('leon','lion')
+		+word-list('hipopotamo','hippopotamus')
+		+word-list('rinoceronte','rinocerontos')
+		+word-list('cuerno','antler')
+		+word-list('trompa','trunk')
+		+word-list('colmillo','tusk')
 
-			.row.bb
-				.col-6.mt-3
-					.row
-						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
-						.col.text-left
-							p elefante
-							p elephant
-			
-				.col-6.text-right.word-list-imgs.mt-3
-					.row
-						.col
-							img.wdth-25(src='../assets/img/general-icons/star.svg')
-							img.wdth-25(src='../assets/img/general-icons/edit.svg')
-							img.wdth-25(src='../assets/img/general-icons/cancel.svg')
-					.row
-						.col
-							img.wdth-19(src='../assets/img/word_edit/blue_male@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/blue_neuter@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
-			.row.bb
-				.col-6.mt-3
-					.row
-						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
-						.col.text-left
-							p leon
-							p lion
-			
-				.col-6.text-right.word-list-imgs.mt-3
-					.row
-						.col
-							img.wdth-25(src='../assets/img/general-icons/star.svg')
-							img.wdth-25(src='../assets/img/general-icons/edit.svg')
-							img.wdth-25(src='../assets/img/general-icons/cancel.svg')
-					.row
-						.col
-							img.wdth-19(src='../assets/img/word_edit/blue_male@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/blue_neuter@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
-			.row.bb
-				.col-6.mt-3
-					.row
-						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
-						.col.text-left
-							p elefante
-							p elephant
-			
-				.col-6.text-right.word-list-imgs.mt-3
-					.row
-						.col
-							img.wdth-25(src='../assets/img/general-icons/star.svg')
-							img.wdth-25(src='../assets/img/general-icons/edit.svg')
-							img.wdth-25(src='../assets/img/general-icons/cancel.svg')
-					.row
-						.col
-							img.wdth-19(src='../assets/img/word_edit/blue_male@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/blue_neuter@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
-			.row.bb
-				.col-6.mt-3
-					.row
-						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
-						.col.text-left
-							p leon
-							p lion
-			
-				.col-6.text-right.word-list-imgs.mt-3
-					.row
-						.col
-							img.wdth-25(src='../assets/img/general-icons/star.svg')
-							img.wdth-25(src='../assets/img/general-icons/edit.svg')
-							img.wdth-25(src='../assets/img/general-icons/cancel.svg')
-					.row
-						.col
-							img.wdth-19(src='../assets/img/word_edit/blue_male@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/blue_neuter@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
-			.row.bb
-				.col-6.mt-3
-					.row
-						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
-						.col.text-left
-							p leon
-							p lion
-			
-				.col-6.text-right.word-list-imgs.mt-3
-					.row
-						.col
-							img.wdth-25(src='../assets/img/general-icons/star.svg')
-							img.wdth-25(src='../assets/img/general-icons/edit.svg')
-							img.wdth-25(src='../assets/img/general-icons/cancel.svg')
-					.row
-						.col
-							img.wdth-19(src='../assets/img/word_edit/blue_male@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/blue_neuter@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
-			.row.bb
-				.col-6.mt-3
-					.row
-						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
-						.col.text-left
-							p elefante
-							p elephant
-			
-				.col-6.text-right.word-list-imgs.mt-3
-					.row
-						.col
-							img.wdth-25(src='../assets/img/general-icons/star.svg')
-							img.wdth-25(src='../assets/img/general-icons/edit.svg')
-							img.wdth-25(src='../assets/img/general-icons/cancel.svg')
-					.row
-						.col
-							img.wdth-19(src='../assets/img/word_edit/blue_male@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/blue_neuter@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
-			.row.bb
-				.col-6.mt-3
-					.row
-						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
-						.col.text-left
-							p leon
-							p lion
-			
-				.col-6.text-right.word-list-imgs.mt-3
-					.row
-						.col
-							img.wdth-25(src='../assets/img/general-icons/star.svg')
-							img.wdth-25(src='../assets/img/general-icons/edit.svg')
-							img.wdth-25(src='../assets/img/general-icons/cancel.svg')
-					.row
-						.col
-							img.wdth-19(src='../assets/img/word_edit/blue_male@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/blue_neuter@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
-							img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
-			.row.text-center.confirm
-				.col
-					p To rehearsal mode	
-			
+	.row.text-center.confirm.fixed-bottom
+		.col
+			p To rehearsal mode	
+		
 
 
 
