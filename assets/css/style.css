@@ -44,7 +44,8 @@ a:hover {
     color: #fff;
 }
 
-.navigation>.container {
+.navigation>.container,
+.navigation>.container-fluid {
     background-color: #25475B;
 }
 
@@ -101,7 +102,7 @@ a:hover {
 
 /*Select language page*/
 .body-select{
-    margin-top: 58px;
+    margin-top: 53px;
 }
 .body-select p.dark-blue {
     margin-top: 1.5rem;
@@ -125,6 +126,15 @@ a:hover {
     .flags img.checked-icon {
         padding: 1.3rem 0;
     }
+}
+@media (max-width: 320px) {
+    .flags img.checked-icon {
+        padding: 1.3rem 0;
+    }
+    .body-select{
+    margin-top: 57px;
+    padding-top: 7px;
+}
 }
 
 
@@ -363,7 +373,7 @@ input:checked + .slider:before {
     background-repeat: no-repeat;
     background-color: #FFF;
     background-size: cover;
-    height: 800px;
+    height: auto;
     max-width: 100%;
     color: white;
 }
@@ -447,14 +457,26 @@ input:checked + .slider:before {
 .learn-ten-words .play-only img {
     margin-top: 25%;
 }
+@media (min-width: 1501px) {
+    .learn-ten-words .aito-rules img {
+    width: 40%;
 
-@media (min-width: 1440px) {
+}
     .learn-ten-words .aito-2-rules img {
-        width: 61%;
+        width: 40%;
+        margin-top: -8rem;
+    }
+}
+@media (min-width: 1440px) and (max-width: 1500px) {
+    .learn-ten-words .aito-rules img {
+    width: 45%;
+}
+    .learn-ten-words .aito-2-rules img {
+        width: 49%;
         margin-top: -8rem;
     }
     .row.aito-2.mtop {
-        margin-top: 9%;
+        margin-top: 20%;
     }
 }
 
@@ -1186,4 +1208,6 @@ img.wolf{
 .ml-2-5{
     margin-left: 2.5rem;
 }
-
+.wdth-200{
+    width: 200px;
+}
