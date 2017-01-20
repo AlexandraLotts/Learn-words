@@ -12,11 +12,12 @@ mixin navigation(href1, name1, href2, name2, href3, name3, src)
 
 
 mixin flags(src, title, src2)
-	.media.flags
-		img.d-flex.align-self-center.mr-3(src=src)
-		.media-body
-			p.mt-3 #{title}
-		img(class!=attributes.class src=src2)
+	a.flags-links(href='#')
+		.media.flags
+			img.d-flex.align-self-center.mr-3(src=src)
+			.media-body
+				p.mt-3 #{title}
+			img(class!=attributes.class src=src2)
 
 mixin information(title, src)
 	.row.bb.mt-3

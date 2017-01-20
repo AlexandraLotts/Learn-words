@@ -3,7 +3,7 @@ block title
 	title Review
 
 block content
-	.navigation
+	.navigation.fixed-top
 		.container-fluid
 			.row
 				.col
@@ -24,8 +24,27 @@ block content
 		.row.bb.light-blue-bckg.mt-2
 				.col-6.mt-3
 					.row
+						.col-3.col-md-2.col-lg-1.mt-3
+							img.play-img.checked-icon.pr-1(src='../assets/img/checkbox_checked_blue.png')
+						.col.text-left.title-review-bl
+							p elefante
+							p elephant
+			
+				.col-6.text-right.word-list-imgs.mt-3
+					.row
+						.col.pb-3
+							img.wdth150(src='../assets/img/elephant.png')
+						.col.choose-another
+							img.wdth-100(src='../assets/img/buttons/choose_another_button@2x.png')
+							p.text-center.sky-blue-color
+								| Choose <br/>
+								| another 
+
+		.row.bb.light-blue-bckg
+				.col-6.mt-3
+					.row
 						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
+							img.play-img.checked-icon(src='../assets/img/checkbox_checked_blue.png')
 						.col.text-left.title-review-bl
 							p elefante
 							p elephant
@@ -39,7 +58,7 @@ block content
 				.col-6.mt-3
 					.row
 						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
+							img.play-img.checked-icon(src='../assets/img/checkbox_checked_blue.png')
 						.col.text-left.title-review-bl
 							p elefante
 							p elephant
@@ -53,7 +72,7 @@ block content
 				.col-6.mt-3
 					.row
 						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
+							img.play-img.checked-icon(src='../assets/img/checkbox_checked_blue.png')
 						.col.text-left.title-review-bl
 							p elefante
 							p elephant
@@ -67,21 +86,7 @@ block content
 				.col-6.mt-3
 					.row
 						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
-						.col.text-left.title-review-bl
-							p elefante
-							p elephant
-			
-				.col-6.text-right.word-list-imgs.mt-3
-					.row
-						.col.pb-3
-							img.wdth150(src='../assets/img/elephant.png')
-							img.wdth-100(src='../assets/img/buttons/choose_another_button@2x.png')
-		.row.bb.light-blue-bckg
-				.col-6.mt-3
-					.row
-						.col-3.col-md-2.mt-3
-							img.play-img.checked-icon(src='../assets/img/general-icons/play-button.svg')
+							img.play-img.checked-icon(src='../assets/img/checkbox_checked_blue.png')
 						.col.text-left.title-review-bl
 							p elefante
 							p elephant
@@ -93,7 +98,7 @@ block content
 							img.wdth-100(src='../assets/img/buttons/choose_another_button@2x.png')
 
 		.row
-			.col.text-center.mt-3.mb-3
+			.col.text-center.mt-3.mb-3.review
 				a.btn.btn-red.mr-3(href='#') Cancel
 				a.btn.btn-green(href='#') Confirm
 
