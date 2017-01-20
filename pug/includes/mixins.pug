@@ -113,4 +113,21 @@ mixin word-list(word,translation)
 						img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
 						img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
 
+mixin review(title1,title2, src1, number, title3)
+	.col-6.mt-3
+		.row
+			.col-3.col-md-2.col-lg-1.mt-3
+				img.play-img.checked-icon.pr-1(src='../assets/img/checkbox_checked_blue.png')
+			.col.text-left.title-review-bl
+				p #{title1}
+				p #{title2}
 
+	.col-6.text-right.word-list-imgs.mt-3
+		.row
+			.col.pb-3
+				img.wdth150(src=src1)
+			.col-3.choose-another
+				span
+					i #{number}
+					img.wdth-100(src='../assets/img/buttons/choose_another_button@2x.png')
+					p.text-center.sky-blue-color #{title3}

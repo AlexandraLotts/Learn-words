@@ -1377,3 +1377,8 @@ img.wolf {
     width: 170px;
     cursor: pointer;
 }
+.choose-another span{position: relative; display: inline-block;}
+
+.choose-another i{position: absolute; top: 15px; right: 15px; font-style: normal; color: #fff;}
+
+.choose-another p{position: absolute; width: 100%; margin:0; padding: 0; top: 55px;}
