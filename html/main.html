@@ -63,11 +63,33 @@
               <div class="col-12 col-md-6 text-right mt-3"><a href="#"><img class="wdth-80 mr-3" src="../assets/img/home/round_facebook_icon@2x.png"></a><a href="#"><img class="wdth-80 mr-3" src="../assets/img/home/audio_button@2x.png"></a></div>
             </div>
           </div>
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!--button.close(type='button', data-dismiss='modal', aria-hidden='true') ×	-->
+                  <h4 class="modal-title">Watch instruction video?</h4>
+                </div>
+                <div class="modal-body"><img class="wdth-30" src="../assets/img/video.png">
+                  <p>Welcome to Learn Words! We recommended that you watch the 5 minute instruction video first.</p>
+                  <p>You can also watch this video later from the help on the main screen.</p>
+                </div>
+                <div class="modal-footer modal-buttons"><a class="btn white-btn pb-2">Not now</a><br><a class="btn green-btn">Watch video</a></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="../assets/js/bootstrap.min.js"></script>
+  <footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        setTimeout(function(){$('#myModal').modal('show');}, 3000);
+      });
+    </script>
+  </footer>
 </html>

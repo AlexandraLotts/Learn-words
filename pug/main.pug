@@ -81,3 +81,27 @@ block content
 								a(href='#')
 									img.wdth-80.mr-3(src='../assets/img/home/audio_button@2x.png')
 
+					#myModal.modal.fade
+						.modal-dialog
+							.modal-content
+								.modal-header
+									//button.close(type='button', data-dismiss='modal', aria-hidden='true') ×	
+									h4.modal-title Watch instruction video?
+								.modal-body
+									img.wdth-30(src='../assets/img/video.png')
+									p Welcome to Learn Words! We recommended that you watch the 5 minute instruction video first.
+									p You can also watch this video later from the help on the main screen.
+
+								.modal-footer.modal-buttons
+									a.btn.white-btn.pb-2 Not now
+									br
+									a.btn.green-btn Watch video
+				
+block footer
+	script.
+		$(document).ready(function(){
+		  setTimeout(function(){$('#myModal').modal('show');}, 3000);
+		});
+
+
+
