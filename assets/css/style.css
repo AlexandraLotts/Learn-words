@@ -425,7 +425,11 @@ input:checked + .slider:before {
     width: 70%;
     margin-top: -9rem;
 }
-
+.aito-green{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 1.5rem;
+}
 .aito-green-btn {
     background: #afe94f;
     background-image: -webkit-linear-gradient(top, #afe94f, #469723);
@@ -446,8 +450,11 @@ input:checked + .slider:before {
 
 @media (max-width: 576px) {
     .aito-green-btn {
-        padding: .6rem 3rem;
+        padding: .6rem 2rem;
     }
+    .learn-ten-words {
+    min-height: calc(100vh - 54px);
+}
 }
 
 .aito-green p {
@@ -534,9 +541,9 @@ input:checked + .slider:before {
         padding-left: 50px;
         margin-top: 1.2rem;
     }
-    .row.aito {
+    /*.row.aito {
         margin-left: 50px;
-    }
+    }*/
     .learn-ten-words .aito-rules img {
         width: 100%;
         margin-top: -1rem;
@@ -686,15 +693,11 @@ input:checked + .slider:before {
     border-bottom: solid #e38e56 1px;
 }
 
-.say-words-block .text-area {
+.say-words-block textarea {
     background-color: rgba(255, 255, 255, 0.72);
     border: none;
     border-radius: 20px;
-    height: 20rem;
     margin-bottom: 1rem;
-}
-
-.say-words-block .text-area p {
     color: #45697f;
     padding-top: .5rem;
     margin-bottom: 0;
@@ -897,43 +900,6 @@ input:checked + .slider:before {
     padding-bottom: 5px;
 }
 
-.enrich-words-block a.btn.btn-orange {
-    background: #fad15c;
-    background-image: -webkit-linear-gradient(top, #fad15c, #f77622);
-    background-image: -moz-linear-gradient(top, #fad15c, #f77622);
-    background-image: -ms-linear-gradient(top, #fad15c, #f77622);
-    background-image: -o-linear-gradient(top, #fad15c, #f77622);
-    background-image: linear-gradient(to bottom, #fad15c, #f77622);
-    -webkit-border-radius: 50;
-    -moz-border-radius: 50;
-    border-radius: 50px;
-    color: #fff;
-    font-size: .9rem;
-    padding: 8px 17px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-top: solid #fad15c 1px;
-    border-bottom: solid #f77622 1px;
-}
-
-.enrich-words-block a.btn.btn-green {
-    background: #afe94f;
-    background-image: -webkit-linear-gradient(top, #afe94f, #469723);
-    background-image: -moz-linear-gradient(top, #afe94f, #469723);
-    background-image: -ms-linear-gradient(top, #afe94f, #469723);
-    background-image: -o-linear-gradient(top, #afe94f, #469723);
-    background-image: linear-gradient(to bottom, #afe94f, #469723);
-    -webkit-border-radius: 50;
-    -moz-border-radius: 50;
-    border-radius: 50px;
-    color: #fff;
-    font-size: .9rem;
-    padding: 8px 17px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-top: solid #afe94f 1px;
-    border-bottom: solid #469723 1px;
-}
 
 .close-icon {
     width: 35px;
@@ -1177,14 +1143,27 @@ input:checked + .slider:before {
     text-decoration: none;
     border-top: solid #facf5b 1px;
     border-bottom: solid #f77825 1px;
+    display: inline-block;
+    width: 70%;
+    text-align: center;
 }
 
 .white-button {
     background-color: #fff;
-    color: rgb(37, 71, 91);
     padding: 8px 10px;
     border-radius: .25rem;
-    width: 70%;
+    width: 80%;
+}
+.white-button span {
+text-decoration: none;
+color: #25475B;
+padding-left: 1rem;
+}
+
+@media (min-width: 1024px) {
+.white-button {
+    width: 55%;
+}
 }
 
 .edit-words-block p.title {
@@ -1193,6 +1172,20 @@ input:checked + .slider:before {
     color: rgb(37, 71, 91);
     font-size: .8rem;
     margin-top: 2rem;
+}
+.text-image-area{
+    color: #ccc;
+    background-color: white;
+    min-height: 150px;
+    border-radius: .25rem;
+}
+.text-image-area img{
+    margin: 0 10px;
+}
+.text-image-area span{
+    margin-top: 10px;
+display: inline-block;
+margin-left: 20px;
 }
 
 .btn-orange-play.btn-orange {
@@ -1208,9 +1201,6 @@ input:checked + .slider:before {
     }
     .btn-green-play img {
         width: 10px;
-    }
-    .white-button {
-        width: 100%;
     }
 }
 
@@ -1262,9 +1252,6 @@ img.wolf {
         right: .8rem;
         top: 5.3rem;
         width: 18px;
-    }
-    .input-group.input-edit-b {
-        width: 100%;
     }
     .btn-orange-play.btn-orange {
         font-size: .9rem;
@@ -1382,3 +1369,51 @@ img.wolf {
 .choose-another i{position: absolute; top: 15px; right: 15px; font-style: normal; color: #fff;}
 
 .choose-another p{position: absolute; width: 100%; margin:0; padding: 0; top: 55px;}
+
+.btns-orange{
+text-align: center;
+}
+.btns-orange p a{
+    background: #fad15c;
+    background-image: -webkit-linear-gradient(top, #fad15c, #f77622);
+    background-image: -moz-linear-gradient(top, #fad15c, #f77622);
+    background-image: -ms-linear-gradient(top, #fad15c, #f77622);
+    background-image: -o-linear-gradient(top, #fad15c, #f77622);
+    background-image: linear-gradient(to bottom, #fad15c, #f77622);
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    border-radius: 50px;
+    color: #fff;
+    font-size: .9rem;
+    padding: 8px 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: solid #fad15c 1px;
+    border-bottom: solid #f77622 1px;
+    font-family: AvenirRomanMedium;
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+}
+.btns-green p a{
+    background: #afe94f;
+    background-image: -webkit-linear-gradient(top, #afe94f, #469723);
+    background-image: -moz-linear-gradient(top, #afe94f, #469723);
+    background-image: -ms-linear-gradient(top, #afe94f, #469723);
+    background-image: -o-linear-gradient(top, #afe94f, #469723);
+    background-image: linear-gradient(to bottom, #afe94f, #469723);
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    border-radius: 50px;
+    color: #fff;
+    font-size: .9rem;
+    padding: 8px 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top: solid #afe94f 1px;
+    border-bottom: solid #469723 1px;
+    font-family: AvenirRomanMedium;
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+}

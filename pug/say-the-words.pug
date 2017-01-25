@@ -41,10 +41,13 @@ block content
 								span.font-weight-bold Listen
 								a.btn.btn-orange-sm(href='#') Recognize
 				.row.pt-5
-					.col-12.text-area
-						p hola 
-						p hombre 
-						p mujer 
+					.col-12
+						form(role='form')
+							.form-group
+								textarea.form-control(rows='20') 
+									| hola 
+									|  hombre 
+									|  mujer
 				.row
 					.col.edit-manually
 						a(href='#')

@@ -58,7 +58,7 @@ mixin enrich-w-columns(title1, title2, href1, src1, href2, src2, href3, src3, hr
 			span #{title1}
 		.col-3.col-md-4.col-sm-4.text-center.words
 			p #{title2}
-		.col-5.col-md-4.text-right.words
+		.col-5.col-sm-4.col-md-4.text-right.words
 			.row.justify-content-end
 				.col-7.col-md-4.col-lg-3.mtm-10.icons-group
 					a(href=href1)
@@ -113,7 +113,7 @@ mixin word-list(word,translation)
 						img.wdth-19(src='../assets/img/word_edit/image_icon@2x.png')
 						img.wdth-19(src='../assets/img/word_edit/tag_icon@2x.png')
 
-mixin review(title1,title2, src1, number, title3)
+mixin review(href, title1, title2, src1, number, title3)
 	.col-6.mt-3
 		.row
 			.col-3.col-md-2.col-lg-1.mt-3
@@ -126,8 +126,9 @@ mixin review(title1,title2, src1, number, title3)
 		.row
 			.col.pb-3
 				img.wdth150(src=src1)
-			.col-3.choose-another
-				span
-					i #{number}
-					img.wdth-100(src='../assets/img/buttons/choose_another_button@2x.png')
-					p.text-center.sky-blue-color #{title3}
+			a(href=href)
+				.col-3.choose-another
+					span
+						i #{number}
+						img.wdth-100(src='../assets/img/buttons/choose_another_button@2x.png')
+						p.text-center.sky-blue-color #{title3}
