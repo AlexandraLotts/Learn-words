@@ -329,7 +329,7 @@ input:checked + .slider:before {
     background: url(../img/backgrounds/pathway_with_pines@2x.jpg);
     background-repeat: no-repeat;
     background-color: #FFF;
-    background-size: 100% 100%;
+    background-size: cover;
     min-height: calc(100vh - 60px);
     height: auto;
     color: #25475B;
@@ -573,10 +573,12 @@ input:checked + .slider:before {
     font-family: 'AvenirRomanHeavy';
     font-size: 1.3rem;
 }
-
+.setup-exs-button{
+    text-align: center;
+}
 .setup-exs-button a.btn.btn-green {
-    margin-top: 50%;
-    margin-bottom: 3%;
+    margin-top: calc(50vh);
+
 }
 
 .button-centered p a {
@@ -1088,6 +1090,11 @@ input:checked + .slider:before {
 .input-group.input-edit-b {
     width: 70%;
 }
+@media (max-width: 576px) {
+.input-group.input-edit-b {
+    width: 100%;
+}
+}
 
 .form-control.edit-b {
     border: 2px solid #25475B;
@@ -1120,6 +1127,9 @@ input:checked + .slider:before {
     border-top: solid #aee74e 1px;
     border-bottom: solid #4e9d27 1px;
     text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
 }
 
 .btn-green-play img {
@@ -1144,10 +1154,29 @@ input:checked + .slider:before {
     border-top: solid #facf5b 1px;
     border-bottom: solid #f77825 1px;
     display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.btn-orange-play-sm {
+    background: #facf5b;
+    background-image: -webkit-linear-gradient(top, #facf5b, #f77825);
+    background-image: -moz-linear-gradient(top, #facf5b, #f77825);
+    background-image: -ms-linear-gradient(top, #facf5b, #f77825);
+    background-image: -o-linear-gradient(top, #facf5b, #f77825);
+    background-image: linear-gradient(to bottom, #facf5b, #f77825);
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 6px 20px;
+    text-decoration: none;
+    border-top: solid #facf5b 1px;
+    border-bottom: solid #f77825 1px;
+    display: inline-block;
     width: 70%;
     text-align: center;
 }
-
 .white-button {
     background-color: #fff;
     padding: 8px 10px;
@@ -1159,7 +1188,11 @@ text-decoration: none;
 color: #25475B;
 padding-left: 1rem;
 }
-
+@media (max-width: 576px) {
+.btn-orange-play-sm {
+    width: 100%;
+}
+}
 @media (min-width: 1024px) {
 .white-button {
     width: 55%;
@@ -1178,14 +1211,14 @@ padding-left: 1rem;
     background-color: white;
     min-height: 150px;
     border-radius: .25rem;
+    padding: 5px;
 }
 .text-image-area img{
     margin: 0 10px;
 }
-.text-image-area span{
-    margin-top: 10px;
-display: inline-block;
-margin-left: 20px;
+
+.text-image-area span.blue{
+color: #25475B;
 }
 
 .btn-orange-play.btn-orange {
@@ -1228,7 +1261,7 @@ margin-left: 20px;
 }
 
 .add-icon {
-    padding-left: 2.3rem;
+    padding-left: 3rem;
 }
 
 img.img-edit {
@@ -1243,7 +1276,13 @@ img.close-edit {
 img.wolf {
     width: 150px;
 }
-
+@media (max-width: 809px) and (min-width:768px){
+    img.close-edit {
+    position: absolute;
+    top: 7rem;
+    left: 9rem;
+}
+}
 @media (max-width: 576px) {
     img.img-edit {
         width: 125px;

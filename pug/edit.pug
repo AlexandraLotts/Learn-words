@@ -19,31 +19,31 @@ block content
 							img.nav-icon(src='../assets/img/general-icons/question-white.svg')
 	.container-fluid.edit-words-block
 		.row.pt-4
-			.col-8.col-md-10
+			.col-7.col-md-10
 				.input-group.input-edit-w
 					span.input-group-addon 
 						img.question-icon(src='../assets/img/flags/spain@2x.png')
 					input.form-control.edit-w(type='text', placeholder='elefante')
-			.col-4.col-md-2
+			.col-5.col-md-2
 				a.btn-green-play(href='#')
 					img(src='../assets/img/general-icons/play.svg')
 					span Listen
 		.row.pt-4
-			.col-8.col-md-10
+			.col-7.col-md-10
 				.input-group.input-edit-w
 					span.input-group-addon 
 						img.question-icon(src='../assets/img/flags/england@2x.png')
 					input.form-control.edit-w(type='text', placeholder='elephant')
-			.col-4.col-md-2
+			.col-5.col-md-2
 				a.btn-orange-play(href='#')
 					span Suggest
 		.row.pt-4
-			.col-8.col-md-10
+			.col-7.col-md-10
 				.input-group.input-edit-w
 					span.input-group-addon 
 						img.question-icon(src='../assets/img/word_edit/tag_icon@2x.png')
 					input.form-control.edit-w(type='text', placeholder='Big animals')
-			.col-4.col-md-2.add-icon
+			.col-5.col-md-2.add-icon
 				a(href='#')
 					img.wdth-30(src='../assets/img/general-icons/add.svg')
 		.row
@@ -51,31 +51,31 @@ block content
 				p.title Image for word
 		.row.justify-content-center
 			.col-12.col-md-8
-				.row.justify-content-between
-					.col-6.col-md-4.text-right
+				.row
+					.col-6.col-md-4.text-left
 						img.wdth150.img-edit(src='../assets/img/elephant-2.png')
 						a(href='#')
 							img.question-icon.close-edit(src='../assets/img/word_edit/close_red_icon@2x.png')
 					.col-6.text-left
 						.row
-							.col-12
+							.col-12.col-md-10
 								label Upload from
 								.input-group.input-edit-b
 									span.input-group-addon 
 										img.question-icon(src='../assets/img/word_edit/earth_icon@2x.png')
 									input.form-control.edit-b(type='text', placeholder='URL')
-							.col-12.mt-4
-								a.btn-orange-play.btn-orange(href='#')
+							.col-12.col-md-10.mt-4
+								a.btn-orange-play-sm.btn-orange(href='#')
 									span Suggest
 		.row
 			.col-12
 				p.title Example sentence
 				.row
-					.col-8.col-md-10
-						.text-area
-							img.question-icon(src='../assets/img/flags/spain@2x.png')
-							span Has visto a un elefante volar alguna vez?
-					.col-4.col-md-2
+					.col-7.col-md-10
+						div.text-image-area(contenteditable='')
+							img.question-icon(contenteditable='false', src='../assets/img/flags/spain@2x.png')
+							span.blue Has visto a un elefante volar alguna vez?
+					.col-5.col-md-2
 						p
 							a.btn-orange-play(href='#')
 								span Suggest
@@ -84,28 +84,28 @@ block content
 							a.btn-green-play(href='#')
 								img(src='../assets/img/general-icons/play.svg')
 								span Listen
-				.row
-					.col-8.col-md-10
-						.text-area
-							img.question-icon(src='../assets/img/flags/england@2x.png')
-							span Have you ever seen an elephant fly?
+				.row.mt-3
+					.col-7.col-md-10
+						div.text-image-area(contenteditable='')
+							img.question-icon(contenteditable='false', src='../assets/img/flags/england@2x.png')
+							span.blue Have you ever seen an elephant fly?
 									
 		.row
 			.col.pb-4
 				p.title Word definition
 				.row
-					.col-8.col-md-10
+					.col-7.col-md-10
 						.input-group.input-edit-w
 							span.input-group-addon 
 								img.question-icon(src='../assets/img/word_edit/blue_flowchart@2x.png')
 							input.form-control.edit-w(type='text', placeholder='Noun')
-					.col-4.col-md-2
+					.col-5.col-md-2
 						p.white-button
 							a(href='#')
 								img.question-icon(src='../assets/img/word_edit/blue_male@2x.png')
 								span el
 				.row.pt-4
-					.col-8.col-md-10
+					.col-7.col-md-10
 						div.text-image-area(contenteditable='')
 							img.question-icon(contenteditable='false', src='../assets/img/word_edit/blue_book@2x.png')
 							span Your notes on this word
