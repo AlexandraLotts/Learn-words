@@ -781,6 +781,11 @@ input:checked + .slider:before {
     .say-words-block p.subtitle {
         font-size: .7rem;
     }
+    .btn.btn-red,
+    .btn.btn-green {
+    font-size: 16px;
+    padding: 10px 30px;
+}
 }
 
 
@@ -1347,10 +1352,6 @@ img.wolf {
     }
     img.wolf {
         width: 125px;
-    }
-    .review a.btn.btn-red {
-        margin-right: 0 !important;
-        margin-bottom: 1rem;
     }
     .title-review-bl p {
         font-size: .8rem;
