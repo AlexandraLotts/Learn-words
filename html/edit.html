@@ -75,8 +75,16 @@
         <div class="col-12">
           <p class="title">Example sentence</p>
           <div class="row">
-            <div class="col-7 col-md-10">
-              <div class="text-image-area" contenteditable=""><img class="question-icon" contenteditable="false" src="../assets/img/flags/spain@2x.png"><span class="blue">Has visto a un elefante volar alguna vez?</span></div>
+            <div class="col-7 col-md-10"><img class="question-icon text-image-area" src="../assets/img/flags/spain@2x.png">
+              <form role="form">
+                <div class="form-group">
+                  <textarea class="form-control blue" rows="7">Has visto a un elefante volar alguna vez?</textarea>
+                </div>
+              </form>
+              <!--div.text-image-area(contenteditable='')
+              img.question-icon(contenteditable='false', src='../assets/img/flags/spain@2x.png')
+              span.blue Has visto a un elefante volar alguna vez?
+              -->
             </div>
             <div class="col-5 col-md-2">
               <p><a class="btn-orange-play" href="#"><span>Suggest</span></a></p>
@@ -84,8 +92,12 @@
             </div>
           </div>
           <div class="row mt-3">
-            <div class="col-7 col-md-10">
-              <div class="text-image-area" contenteditable=""><img class="question-icon" contenteditable="false" src="../assets/img/flags/england@2x.png"><span class="blue">Have you ever seen an elephant fly?</span></div>
+            <div class="col-7 col-md-10"><img class="question-icon text-image-area" src="../assets/img/flags/england@2x.png">
+              <form role="form">
+                <div class="form-group">
+                  <textarea class="form-control blue" rows="7">Have you ever seen an elephant fly?</textarea>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -104,8 +116,11 @@
             </div>
           </div>
           <div class="row pt-4">
-            <div class="col-7 col-md-10">
-              <div class="text-image-area" contenteditable=""><img class="question-icon" contenteditable="false" src="../assets/img/word_edit/blue_book@2x.png"><span>Your notes on this word</span></div>
+            <div class="col-7 col-md-10"><img class="question-icon text-image-area" src="../assets/img/word_edit/blue_book@2x.png">
+              <form role="form"></form>
+              <div class="form-group">
+                <textarea class="form-control gray" rows="7">Your notes on this word</textarea>
+              </div>
             </div>
           </div>
         </div>

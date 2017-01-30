@@ -72,7 +72,11 @@ block content
 				p.title Example sentence
 				.row
 					.col-7.col-md-10
-						div.text-image-area(contenteditable='')
+						img.question-icon.text-image-area(src='../assets/img/flags/spain@2x.png')
+						form(role='form')
+							.form-group
+								textarea.form-control.blue(rows='7') Has visto a un elefante volar alguna vez?
+						//div.text-image-area(contenteditable='')
 							img.question-icon(contenteditable='false', src='../assets/img/flags/spain@2x.png')
 							span.blue Has visto a un elefante volar alguna vez?
 					.col-5.col-md-2
@@ -86,9 +90,10 @@ block content
 								span Listen
 				.row.mt-3
 					.col-7.col-md-10
-						div.text-image-area(contenteditable='')
-							img.question-icon(contenteditable='false', src='../assets/img/flags/england@2x.png')
-							span.blue Have you ever seen an elephant fly?
+						img.question-icon.text-image-area(src='../assets/img/flags/england@2x.png')
+						form(role='form')
+							.form-group
+								textarea.form-control.blue(rows='7') Have you ever seen an elephant fly?
 									
 		.row
 			.col.pb-4
@@ -106,9 +111,10 @@ block content
 								span el
 				.row.pt-4
 					.col-7.col-md-10
-						div.text-image-area(contenteditable='')
-							img.question-icon(contenteditable='false', src='../assets/img/word_edit/blue_book@2x.png')
-							span Your notes on this word
+						img.question-icon.text-image-area(src='../assets/img/word_edit/blue_book@2x.png')
+						form(role='form')
+						.form-group
+							textarea.form-control.gray(rows='7') Your notes on this word
 
 					
 				

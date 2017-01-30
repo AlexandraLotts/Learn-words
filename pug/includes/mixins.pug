@@ -116,19 +116,20 @@ mixin word-list(word,translation)
 mixin review(href, title1, title2, src1, number, title3)
 	.col-6.mt-3
 		.row
-			.col-3.col-md-2.col-lg-1.mt-3
+			.col-3.col-md-2.col-lg-1
 				img.play-img.checked-icon.pr-1(src='../assets/img/checkbox_checked_blue.png')
 			.col.text-left.title-review-bl
 				p #{title1}
 				p #{title2}
 
-	.col-6.text-right.word-list-imgs.mt-3
-		.row
-			.col.pb-3
-				img.wdth150(src=src1)
-			a(href=href)
-				.col-3.choose-another
+	.col-6.text-right.review-list
+		.row.no-gutters
+			.col-3.col-md-7.col-lg-9.pb-3
+				img.animals(src=src1)
+			
+			.col.col-md-5.col-lg-3.choose-another
+				a(href=href)
 					span
 						i #{number}
-						img.wdth-100(src='../assets/img/buttons/choose_another_button@2x.png')
-						p.text-center.sky-blue-color #{title3}
+						img(src='../assets/img/buttons/choose_another_button@2x.png')
+						p.text-center #{title3}
